@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:tcc_me_adote/app/pages/animal/pet_list_page.dart';
+import 'package:tcc_me_adote/app/pages/splash/splash_page.dart';
 
 class TccMeAdote extends StatelessWidget {
   const TccMeAdote({super.key});
@@ -10,7 +12,8 @@ class TccMeAdote extends StatelessWidget {
     return MaterialApp(
       title: 'Me Adote',
       routes: {
-        '/':(context) => Container(),
+        '/':(context) => Splash(),
+        '/pets':(context) => PetListPage(),
       },
     );
   }
